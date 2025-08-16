@@ -38,4 +38,6 @@ const myFunction = function(){
     console.log("hello");
 }
 
-console.log(typeof id);
+
+// Primitve : call memory
+//Non primitve : heap memory
