@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body>
+   <h1>Chai aur Code</h1> 
+   <button id="stop">Stop</button>
+</body>
+<script>
+    const saymyName = function(){
+        console.log("Jinansh");
+    }
+    //Only pass reference do not add () after function reference
+    setTimeout(saymyName,2000)
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "Javascript series"
+    }
+    const changeMe = setTimeout(changeText,3000)
+
+    document.getElementById('stop').addEventListener('click',function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED");
+    })
+</script>
+</html>
