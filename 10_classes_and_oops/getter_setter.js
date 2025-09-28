@@ -1,0 +1,28 @@
+class User {
+    constructor(email,password){
+        this.email = email;
+        this.password = password
+    }
+
+    get email(){
+        return this._email.toUpperCase()
+    }
+
+    set email(value){
+        this._email = value
+    }
+
+    get password(){
+        return `${this._password}hit`
+    }
+
+    set password(value){
+        this._password = value
+    }
+}
+
+const Jin = new User("abc@xyz.com","abc")
+console.log(Jin.password);
+console.log(Jin.email);
+
+
